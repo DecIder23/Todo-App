@@ -1,0 +1,11 @@
+
+   <div style="margin: 100px;">
+
+    <h2 style="background-color: rgb(215, 47, 47); text-align: center; text-color :White">Task List</h2>
+    <input type="text"[(ngModel)]="newtask"><button (click)="add_tasks()">Add Task</button>
+
+    <p *ngFor=" let  item of tasks">
+      &diams;{{item.task}}
+      <button (click)="delete_task(item.task)">Delete Task</button>
+    </p>
+   </div>
